@@ -1,5 +1,155 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-cenkalti-backoff (4.3.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * New upstream release
+  * Update Standards-Version to 4.7.0 in d/control (no changes needed)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Mathias Gibbens <gibmat@debian.org>  Fri, 28 Jun 2024 14:45:57 +0000
+
+golang-github-cenkalti-backoff (4.2.1-1) unstable; urgency=medium
+
+  * New upstream version 4.2.1
+  * Bump build-dependency golang-any (>= 2:1.18~) as per go.mod
+
+ -- Anthony Fok <foka@debian.org>  Mon, 03 Jul 2023 15:05:44 -0600
+
+golang-github-cenkalti-backoff (4.2.0-1) unstable; urgency=medium
+
+  * New upstream version 4.2.0
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+
+ -- Anthony Fok <foka@debian.org>  Mon, 03 Jul 2023 11:28:20 -0600
+
+golang-github-cenkalti-backoff (4.1.3-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update watch file format version to 4.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on dh-golang.
+
+  [ Anthony Fok ]
+  * Fix debian/watch "no matching files for watch line" problem
+  * New upstream version 4.1.3
+  * Change Section from devel to golang
+  * Add "Rules-Requires-Root: no" to debian/control
+  * Remove golang-golang-x-net-dev dependency which is no longer
+    since v2.1.0
+  * Bump Standards-Version to 4.6.2 (no change)
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * Invoke dh with --builddirectory=_build
+  * Add myself to the list of Uploaders
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+
+ -- Anthony Fok <foka@debian.org>  Wed, 25 Jan 2023 14:51:51 -0700
+
+golang-github-cenkalti-backoff (4.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Rebuild for unstable.
+
+ -- Félix Sipma <felix@debian.org>  Sun, 05 Sep 2021 11:26:14 +0200
+
+golang-github-cenkalti-backoff (4.1.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit,
+    Repository, Repository-Browse.
+
+  [ Félix Sipma ]
+  * New upstream version 4.1.0
+
+  [ Reinhard Tartler ]
+  * Upload to experimental
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 16 Feb 2021 18:49:37 -0500
+
+golang-github-cenkalti-backoff (3.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Standards-Version: 4.4.1
+  * DH to version 12
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Thu, 26 Dec 2019 06:55:29 +1100
+
+golang-github-cenkalti-backoff (2.0.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Remove myself from uploaders.
+
+ -- Alexandre Viau <aviau@debian.org>  Sun, 15 Sep 2019 17:40:07 -0400
+
+golang-github-cenkalti-backoff (2.0.0-1) unstable; urgency=medium
+
+  [ Michael Stapelberg ]
+  * update debian/gitlab-ci.yml (using salsa.debian.org/go-team/ci/cmd/ci)
+  * update debian/gitlab-ci.yml (using salsa.debian.org/go-team/ci/cmd/ci)
+
+  [ Félix Sipma ]
+  * New upstream version 2.0.0
+  * bump Standards-Version to 4.1.4 (no change required)
+
+ -- Félix Sipma <felix+debian@gueux.org>  Sat, 09 Jun 2018 09:46:14 +0200
+
+golang-github-cenkalti-backoff (1.1.0-4) unstable; urgency=medium
+
+  * Team upload.
+  * Vcs-* urls: pkg-go-team -> go-team.
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 06 Feb 2018 00:06:01 -0500
+
+golang-github-cenkalti-backoff (1.1.0-3) unstable; urgency=medium
+
+  * point Vcs-* urls to salsa.d.o subproject
+
+ -- Alexandre Viau <aviau@debian.org>  Thu, 25 Jan 2018 16:42:11 -0500
+
+golang-github-cenkalti-backoff (1.1.0-2) unstable; urgency=medium
+
+  * Move to salsa.debian.org.
+  * Testsuite: autopkgtest-pkg-go.
+
+ -- Alexandre Viau <aviau@debian.org>  Sat, 30 Dec 2017 14:20:30 -0500
+
+golang-github-cenkalti-backoff (1.1.0-1) unstable; urgency=medium
+
+  * New upstream version 1.1.0
+  * add golang-golang-x-net-dev dependency
+  * bump Standards-Version to 4.1.1
+    - use https:// in copyright file
+    - use priority optional instead of extra
+  * add myself to uploaders
+
+ -- Félix Sipma <felix+debian@gueux.org>  Mon, 27 Nov 2017 13:40:55 +0100
+
+golang-github-cenkalti-backoff (1.0.0-2) unstable; urgency=medium
+
+  [ Martina Ferrari ]
+  * Add myself to Uploaders.
+  * Update dependency on dh-golang.
+  * debian/control: Update Standards-Version (no changes).
+  * debian/control: Replace golang-go with golang-any in Build-Depends.
+
+ -- Alexandre Viau <aviau@debian.org>  Wed, 12 Apr 2017 14:14:07 -0400
+
+golang-github-cenkalti-backoff (1.0.0-1) unstable; urgency=medium
+
+  * New upstream version
+  * Changed my email to @debian.org
+  * Added watch file
+  * Make use of XS-Go-Import-Path
+  * Bump Standards-Version to 3.9.7
+  * Replaced Vcs-Git with secure (https) url
+  * Replaced Vcs-Browsed with secre (https) url
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 21 Mar 2016 16:57:46 -0400
+
+golang-github-cenkalti-backoff (0.0~git20150522.6c45d6b-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #794253)
+
+ -- Alexandre Viau <alexandre@alexandreviau.net>  Fri, 31 Jul 2015 13:59:51 -0400
